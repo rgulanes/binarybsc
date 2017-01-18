@@ -1,0 +1,36 @@
+    <!-- NAV SECTION -->
+    <div class="navbar navbar-inverse navbar-fixed-top" style="overflow: visible;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="<?php echo base_url().('Home.php'); ?>">
+                    <span class="bcs-logo" >SSS</span> Brokenshire
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="<?php echo base_url().('Home.php'); ?>">HOME</a></li>
+                    <li><a href="<?php echo base_url().('About.php'); ?>">ABOUT</a></li>
+                    <li><a href="<?php echo base_url().('Services.php'); ?>">SERVICES</a></li>
+                    <li><a href="<?php echo base_url().('Gallery.php'); ?>">GALLERY</a></li>
+                    <li><a href="<?php echo base_url().('Contact.php'); ?>">CONTACT US</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        ORGANIZATIONS <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">BCSSC</a></li>
+                            <li><a href="#">BROKENSHIRIAN</a></li>
+                            <li><a href="#">LAMP</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="<?php echo base_url().('Admin/Login.php'); ?>">LOGIN</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--END NAV SECTION -->
