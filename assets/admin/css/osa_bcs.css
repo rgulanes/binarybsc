@@ -1,0 +1,17 @@
+.navbar-brand .bcs-logo{
+	margin: -12px 3px;
+    display: inline-block;
+    width: 45px;
+}
+
+.bcs-login-logo{
+	width: 200px;
+    display: inline-block;
+    position: relative;
+    margin: auto 65px;
+}
+
+.mouse-over{
+	cursor: pointer;
+	text-decoration: none;
+}

@@ -63,3 +63,10 @@ $route['Login'] = 'LandingPage/login';
 $route['bcssc'] = 'LandingPage/bcssc';
 $route['brokenshirian'] = 'LandingPage/brokenshirian';
 $route['lamp'] = 'LandingPage/lamp';
+
+/* Admin Module */
+
+$route['Admin/Login'] = 'Admin/login_screen';
+$route['Admin/Home'] = 'Admin/home';
+$route['Admin/Logout'] = 'Admin/logout';
+$route['Admin/Users'] = 'Admin/users';

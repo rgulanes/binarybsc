@@ -21,17 +21,46 @@ class Admin extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
-        //@session_start();
+        @session_start();
         $this->load->model('Admin_model');       
     }
 
 	public function index()
 	{	
-		$this->login_screen();
+		redirect(base_url().('Admin/Login.php'));
 	}
 
 	public function login_screen(){
-		$this->load->view('Globals/Admin/header');
-		$this->load->view('Admin/index');
+		$_SESSION["user"]['username'] = NULL;
+
+		if($_SESSION["user"]['username'] == NULL)
+        {
+        	$this->load->view('Admin/login_screen');
+		}else{
+        	redirect(base_url());
+        }
+	}
+
+	public function home(){
+		if($_SESSION["user"]['username'] != NULL)
+        {
+			$this->load->view('Admin/index');
+		}else{
+			redirect(base_url().('Admin/Login.php'));
+        }
+	}
+
+	public function users(){
+		if($_SESSION["user"]['username'] != NULL)
+        {
+			$this->load->view('Admin/users');
+		}else{
+			redirect(base_url().('Admin/Login.php'));
+        }
+	}
+
+	public function logout(){
+		session_destroy();
+		redirect(base_url().('Admin/Login.php'));
 	}
 }
