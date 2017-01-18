@@ -56,3 +56,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['Home'] = 'LandingPage/home';
 $route['About'] = 'LandingPage/about';
+$route['Services'] = 'LandingPage/services';
+$route['Gallery'] = 'LandingPage/gallery';
+$route['Contact'] = 'LandingPage/contact';
+$route['Login'] = 'LandingPage/login';

@@ -31,12 +31,28 @@ class LandingPage extends CI_Controller {
 	}
 
 	public function home(){
-		$this->load->view('Globals/header');
 		$this->load->view('LandingPage/index');
 	}
 
 	public function about(){
-		$this->load->view('Globals/header');
 		$this->load->view('LandingPage/about');
+	
+	}
+	public function services(){
+		$this->load->view('LandingPage/services');
+	
+	}
+	public function gallery(){
+		$this->load->view('LandingPage/gallery');
+	
+	}
+	public function contact(){
+		$this->load->view('LandingPage/contact');
+	
+	}
+	public function login(){
+		$this->load->view('LandingPage/login');
+	
 	}
 }
+
