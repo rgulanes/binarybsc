@@ -60,3 +60,6 @@ $route['Services'] = 'LandingPage/services';
 $route['Gallery'] = 'LandingPage/gallery';
 $route['Contact'] = 'LandingPage/contact';
 $route['Login'] = 'LandingPage/login';
+$route['bcssc'] = 'LandingPage/bcssc';
+$route['brokenshirian'] = 'LandingPage/brokenshirian';
+$route['lamp'] = 'LandingPage/lamp';

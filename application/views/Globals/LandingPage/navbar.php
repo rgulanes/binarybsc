@@ -22,12 +22,12 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         ORGANIZATIONS <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">BCSSC</a></li>
-                            <li><a href="#">BROKENSHIRIAN</a></li>
-                            <li><a href="#">LAMP</a></li>
+                            <li><a href="<?php echo base_url().('bcssc.php'); ?>">BCSSC</a></li>
+                            <li><a href="<?php echo base_url().('brokenshirian.php'); ?>">BROKENSHIRIAN</a></li>
+                            <li><a href="<?php echo base_url().('lamp.php'); ?>">LAMP</a></li>
                         </ul>
                     </li>
-                    <li><a href="<?php echo base_url().('Admin/Login.php'); ?>">LOGIN</a></li>
+                    <li><a href="<?php echo base_url().('Admin/Login.php'); ?>"><span class="glyphicon glyphicon-log-in"></span>LOGIN</a></li>
                 </ul>
             </div>
 

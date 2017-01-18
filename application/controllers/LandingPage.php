@@ -27,7 +27,7 @@ class LandingPage extends CI_Controller {
 
 	public function index()
 	{	
-		$this->home();
+		redirect(base_url().("Home.php"));
 	}
 
 	public function home(){
@@ -52,6 +52,18 @@ class LandingPage extends CI_Controller {
 	}
 	public function login(){
 		$this->load->view('LandingPage/login');
+	
+	}
+	public function bcssc(){
+		$this->load->view('LandingPage/bcssc');
+	
+	}
+	public function brokenshirian(){
+		$this->load->view('LandingPage/brokenshirian');
+	
+	}
+	public function lamp(){
+		$this->load->view('LandingPage/lamp');
 	
 	}
 }
