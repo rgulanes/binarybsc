@@ -1,102 +1,123 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<!--<![endif]-->
-<?php  $this->load->view('Globals/LandingPage/header');?>
-<body>
-        <?php  $this->load->view('Globals/LandingPage/navbar');?>
-    <!-- HOME SECTION -->
 
-    <div class="container">
+<head>
 
-        <div class="row main-low-margin text-center">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <h2 align="center">The Official Yearbook Publication of Brokenshire College</h2>
-            <hr>
-            <div class="col-md-4 col-sm-4">
-                      <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
-                <h3>News 1</h3>
-                <p>
-                    edit here. 
-                </p>
+    <title>Office of Student Affairs | Brokenshire College</title>
+
+    <link rel="icon" type="image/png" href="<?php echo base_url().('assets/landingpage/img/brokenshirecollege.png')?>" />
+    <!--GOOGLE FONT -->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="<?php echo base_url().('assets/landingpage/brokenshirian/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="<?php echo base_url().('assets/landingpage/brokenshirian/vendor/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="<?php echo base_url().('assets/landingpage/brokenshirian/css/grayscale.min.css')?>" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- NAV SECTION -->
+        <?php  $this->load->view('Globals/LandingPage/navbar_orgs');?>
+    <!--END NAV SECTION -->
+
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+
+                        <h1 class="brand-heading">Brokenshirian</h1>
+                        <p class="intro-text">Official Yearbook Publication of 
+                            <br>Brokenshire College.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 col-sm-4">
-                     <img src="assets/landingpage/img/img2.jpg" width="300px" height="210px">
-                <h3>News 2</h3>
-                <p>
-                    edit here.
-                </p>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                     <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
-                <h3>News 3</h3>
-                <p>
-                    edit here.
-                </p>
-            </div>
-
         </div>
-        <hr>
-        <div class="row main-low-margin ">
+    </header>
 
-            <div class="col-md-8 col-sm-8">
-                <h3>INFO 1</h3>
-                <p>
-                    Paragraph 1.
-                </p>
-                <p>
-                    Paragraph 2.
-                </p>
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Brokenshirian</h2>
+                <p>text here.</p>
             </div>
-
-            
         </div>
-        <hr>
-        <div class="row main-low-margin ">
+    </section>
 
-            <div class="col-md-8 col-sm-8">
-                <h3>INFO 2</h3>
-                <p>
-                    Paragraph 1.
-                </p>
-                <p>
-                    Paragraph 2.
-                </p>
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>link</h2>
+                    <p>link here</p>
+                    <a href="#" class="btn btn-default btn-lg">Visit  Page</a>
+                </div>
             </div>
-
-            
         </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact the Brokenshirian</h2>
+                <p>text here.</p>
+                <p><a href="#">email@gmail.com</a>
+                </p>
+                
+            </div>
+        </div>
+    </section>
 
-    </div>
-    <div class="space-bottom"></div>
-    <!--END HOME SECTION -->
-    <?php  $this->load->view('Globals/LandingPage/footer');?>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Your Website 2016</p>
+        </div>
+    </footer>
 
-    <?php  $this->load->view('Globals/LandingPage/scripts');?>
+    <!-- jQuery -->
+    <script src="<?php echo base_url().('assets/landingpage/brokenshirian/vendor/jquery/jquery.js')?>"></script>
 
-    <!-- page specific scripts -->
-    <!-- SLIDER SCRIPTS LIBRARY -->
-    <script src="<?php echo base_url().('assets/landingpage/Slides-SlidesJS-3/examples/playing/js/jquery.slides.min.js');?>"></script>
-    <!-- CUSTOM SCRIPT-->
-    <script>
-        $(document).ready(function () {
-            $('#slides').slidesjs({
-                width: 940,
-                height: 528,
-                play: {
-                    active: true,
-                    auto: true,
-                    interval: 4000,
-                    swap: true
-                }
-            });
-        });
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<?php echo base_url().('assets/landingpage/brokenshirian/vendor/bootstrap/js/bootstrap.min.js')?>"></script>
 
-    </script>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
 
 </body>
+
 </html>

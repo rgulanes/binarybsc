@@ -108,11 +108,15 @@
                 width: 940,
                 height: 528,
                 play: {
-                    active: true,
+                    active: false,
+                    effect: "slide",
+                    interval: 2000,
                     auto: true,
-                    interval: 4000,
-                    swap: true
-                }
+                    swap: true,
+                    pauseOnHover: false,
+                    restartDelay: 2000
+                },
+                navigation : false
             });
         });
 

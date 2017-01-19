@@ -19,7 +19,7 @@
     <!--SLIDER CSS CLASES -->
     <link href="<?php echo base_url().('assets/landingpage/Slides-SlidesJS-3/examples/playing/css/slider.css');?>" rel="stylesheet" />
     <!--CUSTOM STYLE -->
-    <link href="<?php echo base_url().('assets/landingpage/css/style.css');?>" rel="stylesheet" />
+    <link href="<?php echo base_url().('assets/landingpage/css/style.css').'?v='.date('mdohis');?>" rel="stylesheet" />
 
     <link href="<?php echo base_url().('assets/landingpage/css/landingpage.css');?>" rel="stylesheet" />
 

@@ -231,6 +231,11 @@ color: #FF0000;
     border:1px dashed #e1e1e1;
     padding:0px 0px 15px 0px;
 }
+.slidesjs-pagination {
+  
+    margin-left: 45%;
+    margin-right: 45%;
+}
 
 /* ===========================================================
    BOOTSTRAP ELEMENTS CHANGES   
