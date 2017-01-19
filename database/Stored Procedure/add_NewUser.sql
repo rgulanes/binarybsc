@@ -16,10 +16,10 @@ BEGIN
 			INSERT INTO users_tbl (username, user_password, user_fname, user_lname, user_role, user_status, created_by, date_create)
 				VALUES (uname, pword, fname, lname, position, 1, createdBy, NOW());
 			SET msg = 'Successfully added new user!';
-            SET growl = 'Success';
+            SET growl = 'success';
 	ELSE
 			SET msg = 'User credentials has already been used';
-            SET growl = 'Error';
+            SET growl = 'error';
 		END IF;
 	
     SELECT msg, growl;

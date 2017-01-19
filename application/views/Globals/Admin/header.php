@@ -20,9 +20,12 @@
 <!-- DataTables Responsive CSS -->
 <link href="<?php echo base_url().('assets/admin/plugins/datatables-responsive/css/dataTables.responsive.css');?>" rel="stylesheet">
 
+<!-- jQuery Growl CSS -->
+<link href="<?php echo base_url().('assets/admin/plugins/jquery-growl/jquery.growl.css');?>" rel="stylesheet">
+
 <!-- Custom CSS -->
 <link href="<?php echo base_url().('assets/admin/css/sb-admin-2.css');?>" rel="stylesheet">
-<link href="<?php echo base_url().('assets/admin/css/osa_bcs.css');?>" rel="stylesheet">
+<link href="<?php echo base_url().('assets/admin/css/osa_bcs.css').'?v='.date('mdohis');?>" rel="stylesheet">
 
 <!-- Custom Fonts -->
 <link href="<?php echo base_url().('assets/admin/plugins/font-awesome/css/font-awesome.min.css');?>" rel="stylesheet" type="text/css">
@@ -31,4 +34,4 @@
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> -->

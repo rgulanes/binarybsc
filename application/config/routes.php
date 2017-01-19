@@ -70,3 +70,8 @@ $route['Admin/Login'] = 'Admin/login_screen';
 $route['Admin/Home'] = 'Admin/home';
 $route['Admin/Logout'] = 'Admin/logout';
 $route['Admin/Users'] = 'Admin/users';
+$route['Admin/Galleries'] = 'Admin/galleries';
+$route['Admin/Newsfeed'] = 'Admin/newsfeed';
+
+/* Reports Module */
+$route['Admin/Reports/UserActivityTracking'] = 'Admin/user_activity_tracking';

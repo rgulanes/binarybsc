@@ -6,6 +6,14 @@
 <html lang="en">
 <!--<![endif]-->
 <?php  $this->load->view('Globals/LandingPage/header');?>
+<style type="text/css">
+    #top_newsfeed p, #middle_newsfeed p, #bottom_newsfeed p{
+        font-size: 12px;
+        line-height: normal;
+        margin-bottom: 0;
+        text-align: justify;
+    }
+</style>
 <body>
         <?php  $this->load->view('Globals/LandingPage/navbar');?>
     <!-- HOME SECTION -->
@@ -21,7 +29,7 @@
     <!-- END SLIDER SECTION -->
 
     <div class="container">
-        <div class="row main-low-margin text-center">
+        <div class="row main-low-margin text-center" id="top_newsfeed">
             <div class="col-md-4 col-sm-4">
                       <img src="assets/landingpage/img/img2.jpg" width="300px" height="210px">
                 <h3>INFO 1</h3>
@@ -48,7 +56,7 @@
         <hr>
         <div class="row main-low-margin ">
 
-            <div class="col-md-8 col-sm-8">
+            <div class="col-md-8 col-sm-8" id="middle_newsfeed">
                 <h3>INFO 4</h3>
                 <p>
                     edit here.
@@ -66,7 +74,7 @@
             </div>
         </div>
         <hr>
-        <div class="row main-low-margin ">
+        <div class="row main-low-margin " id="bottom_newsfeed">
             <div class="col-md-3 col-sm-3 text-center">
                          <img src="assets/landingpage/img/img2.jpg" width="200px" height="140px">
                 <h3>INFO</h3>
@@ -121,6 +129,7 @@
         });
 
     </script>
+    <script src="<?php echo base_url().('assets/landingpage/get_feeds.js');?>"></script>
 
 </body>
 </html>

@@ -22,7 +22,7 @@ class Admin extends CI_Controller {
     {
         parent::__construct();
         @session_start();
-        $this->load->model('Admin_model');       
+        $this->load->model('Admin_model');    
     }
 
 	public function index()
@@ -53,13 +53,51 @@ class Admin extends CI_Controller {
 	public function users(){
 		if($_SESSION["user"]['username'] != NULL)
         {
-			$this->load->view('Admin/users');
+            $app_access = array('1', '2');
+            if(in_array($_SESSION['user']['app_access'], $app_access)){
+				$this->load->view('Admin/users');
+			}else{
+				redirect(base_url().('Admin/Home.php'));
+			}
+		}else{
+			redirect(base_url().('Admin/Login.php'));
+        }
+	}
+
+	public function galleries(){
+		if($_SESSION["user"]['username'] != NULL)
+        {
+			$this->load->view('Admin/galleries');
+		}else{
+			redirect(base_url().('Admin/Login.php'));
+        }
+	}
+
+	public function newsfeed(){
+		if($_SESSION["user"]['username'] != NULL)
+        {
+			$this->load->view('Admin/newsfeed');
+		}else{
+			redirect(base_url().('Admin/Login.php'));
+        }
+	}
+
+	public function user_activity_tracking(){
+		if($_SESSION["user"]['username'] != NULL)
+        {	
+			$app_access = array('1', '2');
+            if(in_array($_SESSION['user']['app_access'], $app_access)){
+				$this->load->view('Reports/user_activity_tracking');
+			}else{
+				redirect(base_url().('Admin/Home.php'));
+			}
 		}else{
 			redirect(base_url().('Admin/Login.php'));
         }
 	}
 
 	public function logout(){
+		$this->Admin_model->add_user_logs('logout');
 		session_destroy();
 		redirect(base_url().('Admin/Login.php'));
 	}

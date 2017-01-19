@@ -26,9 +26,12 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="row">
-                                            <div class="col-lg-3">
+                                            <div class="col-lg-4">
                                                 <button type="button" id="add-new-user" class="btn btn-info btn-md">
                                                     <i class="fa fa-plus"></i> Add New User
+                                                </button>
+                                                <button type="button" id="refresh-table" class="btn btn-success btn-md">
+                                                    <i class="fa fa-refresh"></i> Refresh
                                                 </button>
                                             </div>
                                         </div>
@@ -98,11 +101,11 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" id="cancelAddUser">Cancel</button>
-                        <button type="button" class="btn btn-primary" id="confirmAddUser">Add User</button>
-                        <button type="button" class="btn btn-info hide" id="confirmInactivateUser">Inactivate User</button>
-                        <button type="button" class="btn btn-success hide" id="confirmActivateUser">Activate User</button>
-                        <button type="button" class="btn btn-primary hide" id="confirmUpdateUser">Update User</button>
+                        <button type="button" class="btn btn-danger" id="cancelAddUser"><i class="fa fa-times fa-fw"></i> Cancel</button>
+                        <button type="button" class="btn btn-primary" id="confirmAddUser"><i class="fa fa-save fa-fw"></i> Add User</button>
+                        <button type="button" class="btn btn-info hide" id="confirmInactivateUser"><i class="fa fa-lock fa-fw"></i> Lock</button>
+                        <button type="button" class="btn btn-success hide" id="confirmActivateUser"><i class="fa fa-unlock-alt fa-fw"></i> Unlock</button>
+                        <button type="button" class="btn btn-primary hide" id="confirmUpdateUser"><i class="fa fa-save fa-fw"></i> Update User</button>
                     </div>
                 </div>
                 <!-- /.modal-content -->
@@ -118,6 +121,6 @@
     <?php $this->load->view('Globals/Admin/scripts');?>
 
     <!-- Page Specific Scripts -->
-    <script src="<?php echo base_url().('assets/admin/js/admin/admin_users.js');?>"></script>
+    <script src="<?php echo base_url().('assets/admin/js/admin/admin_users.js').'?v='.date('mdohis');?>"></script>
 </body>
 </html>

@@ -77,7 +77,14 @@
                         <br>
                         <div class="row">
                            <div class="col-xs-12">
-                             <p style="font-size: 10px; text-align: right;">Powered by <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?> | Bootstrap</p>
+                                <p style="font-size: 10px; text-align: right;">Powered by <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?> | Bootstrap</p>
+                           </div>
+                           <div class="col-xs-12">
+                                <p style="font-size: 10px; text-align: center;" >
+                                    <a href="<?php echo base_url().('Home.php');?>" style="text-decoration: none;"> <i class="fa fa-home fa-fw"></i> Go To Home</a> | 
+                                    <a href="<?php echo base_url().('About.php');?>" style="text-decoration: none;"> <i class="fa fa-info-circle fa-fw"></i> Go To About</a> |
+                                    <a href="<?php echo base_url().('Gallery.php');?>" style="text-decoration: none;"> <i class="fa fa-image fa-fw"></i> Go To Gallery</a> 
+                                </p>
                            </div>
                         </div>
                     </div>
