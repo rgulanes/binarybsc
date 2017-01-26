@@ -77,14 +77,11 @@ var users = (function(){
 	        error : function(xhr, ajaxOptions, thrownError) {
 				$.growl.error({ message: xhr.status + '<br>' + thrownError, size: 'medium', location: 'br'});
 	        },
-	        beforeSend: function(){
-	            //confirm("Are you sure you want to continue deleting this letter?");
-	        },
 	        success: function(json) {
-	        	if((json.growl) == 'success'){
-	        		$.growl.notice({ message: json.msg, size: 'medium', location: 'br'});
+	        	if((json[0].growl) == 'success'){
+	        		$.growl.notice({ message: json[0].msg, size: 'medium', location: 'br'});
 	        	}else{
-	        		$.growl.error({ message: json.msg, size: 'medium', location: 'br'});
+	        		$.growl.error({ message: json[0].msg, size: 'medium', location: 'br'});
 	        	}
 	            $('#addNewUserModal').modal('hide');
 	            $('#userDatatable').DataTable().ajax.reload();

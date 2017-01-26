@@ -20,8 +20,8 @@
             <div class="row main-low-margin">
                 <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
                     <h1>Our Services</h1>
-                    <h5>text here.
-                    </h5>
+                    <h5>text here.</h5>
+
                 </div>
             </div>
 
@@ -37,6 +37,7 @@
                 <p>
                     text here.
                 </p>
+                <button type="submit" class="btn btn-primary" href="#">Learn more</button>
             </div>
             <div class="col-md-4 col-sm-4">
                 <div class="circle-body"><i class="fa fa-edit fa-5x  icon-set"></i></div>
@@ -44,6 +45,7 @@
                 <p>
                     text here.
                 </p>
+                <button type="" class="btn btn-primary" href="<?php echo base_url().('scholarship.php'); ?>">Learn more</button>
             </div>
             <div class="col-md-4 col-sm-4">
                 <div class="circle-body"><i class="fa fa-picture-o fa-5x  icon-set"></i></div>
@@ -51,6 +53,7 @@
                 <p>
                     text here.
                 </p>
+                <button type="submit" class="btn btn-primary" href="#">Learn more</button>
             </div>
 
         </div>
@@ -71,9 +74,8 @@
             <div class="col-md-4 col-sm-4 text-center">
                 <div class="circle-body"><i class="fa fa-book fa-5x  icon-set"></i></div>
                 <h3>HANDBOOK</h3>
-                <p>
-                   text here.
-                   PDF here.
+                <p> text here. </p>
+                   <button type="submit" class="btn btn-primary" href="#">PDF file</button>
             </div>
         </div>
         <hr>

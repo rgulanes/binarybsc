@@ -64,6 +64,15 @@ class LandingPage extends CI_Controller {
 	}
 	public function lamp(){
 		$this->load->view('LandingPage/lamp');
+
+	
+	}
+	public function softeng(){
+		$this->load->view('LandingPage/softeng');
+	
+	}
+	public function scholarship(){
+		$this->load->view('LandingPage/scholarship.php');
 	
 	}
 }

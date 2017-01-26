@@ -74,7 +74,7 @@
             </div>
 
             <div class="col-md-4 col-sm-4 text-center">
-                <img class="img-circle" src="assets/landingpage/img/img1.jpg">
+                <img class="img-circle" src="assets/landingpage/img/person.jpg" style="width: 200px" >
                 <h3>Office of Student Affairs | Head</h3>
                 <h4>Ms. Joyce Jasa, MAEd</h4>
 

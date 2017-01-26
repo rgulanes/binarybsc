@@ -63,6 +63,10 @@ $route['Login'] = 'LandingPage/login';
 $route['bcssc'] = 'LandingPage/bcssc';
 $route['brokenshirian'] = 'LandingPage/brokenshirian';
 $route['lamp'] = 'LandingPage/lamp';
+$route['SoftEng'] = 'LandingPage/softeng';
+
+/*  Links  */
+$route['SoftEng'] = 'LandingPage/sholarship';
 
 /* Admin Module */
 

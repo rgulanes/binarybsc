@@ -23,6 +23,7 @@
                             <li><a href="<?php echo base_url().('bcssc.php'); ?>">BCSSC</a></li>
                             <li><a href="<?php echo base_url().('brokenshirian.php'); ?>">BROKENSHIRIAN</a></li>
                             <li><a href="<?php echo base_url().('lamp.php'); ?>">LAMP</a></li>
+                            <li><a href="<?php echo base_url().('SoftEng.php'); ?>">S.E. Gr. 2</a></li>
                         </ul>
                     </li>
                     <li><a href="<?php echo base_url().('Admin/Login.php'); ?>"><span class="log-in"></span>LOGIN</a></li>

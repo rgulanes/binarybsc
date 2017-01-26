@@ -30,23 +30,27 @@
 
     <div class="container">
         <div class="row main-low-margin text-center" id="top_newsfeed">
+                                        <h2> OSA Announcements / News </h2>
             <div class="col-md-4 col-sm-4">
-                      <img src="assets/landingpage/img/img2.jpg" width="300px" height="210px">
-                <h3>INFO 1</h3>
+
+                      <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
+                <h3>Title 1</h3>
+                <p>
+                   edit here. 
+                </p>
+            </div>
+            
+            <div class="col-md-4 col-sm-4">
+                     <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
+                <h3>Title 2</h3>
                 <p>
                     edit here.
                 </p>
             </div>
+
             <div class="col-md-4 col-sm-4">
-                     <img src="assets/landingpage/img/img2.jpg" width="300px" height="210px">
-                <h3>INFO 2</h3>
-                <p>
-                    edit here.
-                </p>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                     <img src="assets/landingpage/img/img2.jpg" width="300px" height="210px">
-                <h3>INFO 3</h3>
+                     <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
+                <h3>Title 3</h3>
                 <p>
                     edit here.
                 </p>
@@ -54,46 +58,62 @@
 
         </div>
         <hr>
+                                        <h2> OSA Information </h2>
         <div class="row main-low-margin ">
-
-            <div class="col-md-8 col-sm-8" id="middle_newsfeed">
-                <h3>INFO 4</h3>
-                <p>
-                    edit here.
-                </p>
-                <p>
-                    edit here.
-                </p>
-            </div>
-
+                    <div class="col-md-8 col-sm-8" id="middle_newsfeed">                   
+                            <div class="col-md-4 col-sm-4" >
+                                <h3>Title 1</h3>
+                                <p>
+                                        edit here.
+                                </p>
+                                <p>
+                                        edit here.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-4" >
+                                <h3>Title 2</h3>
+                                <p>
+                                        edit here.
+                                </p>
+                                <p>
+                                        edit here.
+                                </p>
+                            </div>
+                    </div>
             <div class="col-md-4 col-sm-4 text-center">
-             <img class="img-circle" src="<?php echo base_url().('assets/landingpage/img/person.jpg');?>" style="width: 200px">
-                <h3>Office of Student Affairs | Head</h3>
-                <h4>Ms. Joyce Jasa, MAEd</h4>
+             <img class="img-circle" src="<?php echo base_url().('assets/landingpage/img/img1.jpg');?>" style="width: 200px">
+                <h3>Brokenshire College | President</h3>
+                <h4>Linell G. Malimbag, RN, PhD</h4>
 
             </div>
         </div>
         <hr>
-        <div class="row main-low-margin " id="bottom_newsfeed">
-            <div class="col-md-3 col-sm-3 text-center">
-                         <img src="assets/landingpage/img/img2.jpg" width="200px" height="140px">
-                <h3>INFO</h3>
-                <p>
-                    edit here.
-                </p>
-            </div>
-            <div class="col-md-3 col-sm-3 text-center">
-                        <img src="assets/landingpage/img/img2.jpg" width="200px" height="140px">
-                 <h3>INFO</h3>
-                <p>
-                    edit here.
-                </p>
-            </div>
-            <div class="col-md-6 col-sm-6">
-                <h3>INFO</h3>
-                <p>
-                    edit here.
+                                        
+        <div class="row main-low-margin text-center" id="bottom_newsfeed">
+                                        <h2> OSA Information </h2>
+            <div class="col-md-4 col-sm-4">
 
+                      <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
+                <h3>Title 1</h3>
+                <p>
+                    edit here.
+                </p>
+            </div>
+            
+            <div class="col-md-4 col-sm-4">
+                     <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
+                <h3>Title 2</h3>
+                <p>
+                    edit here.
+                </p>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                     <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
+                <h3>Title 3</h3>
+                <p>
+                    edit here.
+                </p>
             </div>
 
         </div>
