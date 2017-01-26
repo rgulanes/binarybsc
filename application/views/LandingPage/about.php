@@ -19,7 +19,7 @@
             <div class="row main-low-margin">
                 <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
                     <h1>About OSA Brokenshire</h1>
-                    <h5>text here.
+                    <h5>Student Affairs Office caters the following: Student Organizations, Student Conduct and Discipline,  Scholarship and Discounts, Non-Academic Awards, Student Activities, Campus Publicity, Certificate of Good Moral, Waiver/ Parental Consent, School Uniform/ID/ Logo, Mails , Lost & Found Items, Confiscated/Found IDs, Lockers.
                     </h5>
                 </div>
             </div>

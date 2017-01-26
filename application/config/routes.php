@@ -65,8 +65,12 @@ $route['brokenshirian'] = 'LandingPage/brokenshirian';
 $route['lamp'] = 'LandingPage/lamp';
 $route['SoftEng'] = 'LandingPage/softeng';
 
-/*  Links  */
-$route['SoftEng'] = 'LandingPage/sholarship';
+/*  Services Links  */
+$route['scholarship'] = 'LandingPage/scholarship';
+$route['handbook'] = 'LandingPage/handbook';
+$route['student_activities'] = 'LandingPage/student_activities';
+$route['organizational_chart'] = 'LandingPage/organizational_chart';
+
 
 /* Admin Module */
 

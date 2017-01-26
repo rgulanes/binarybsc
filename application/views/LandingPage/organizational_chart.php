@@ -23,9 +23,10 @@
 
             <div class="row main-low-margin">
                 <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-                    <h1>I.  Scholarship and Discounts Program</h1>
-                    <h5>Pursuant to the provisions in the student handbook, the College through the Office of Student Affairs (OSA) offered different scholarships, other grants and aids program to qualified and financially needy students. 
-                    </h5>
+                    <h1 align="center" >
+                    Brokenshire College | Organizational Chart
+                    </h1>
+                    
                 </div>
             </div>
 
@@ -35,13 +36,21 @@
    
 
     <div class="container" align="center">
-<h2>Scholarship Program</h2>
             
+            <h2>Brokenshire College Employees</h2>
             <div class="col-lg-12" >
-                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/scholarship.pdf');?>#page=1&zoom=100"></iframe>
+                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Brokenshire_College_Employees.pdf');?>#page=1&zoom=100"></iframe>
+            </div>
+
+        <hr>
+
+            <h2>Student Organizations</h2>
+            <div class="col-lg-12" >
+                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Student_Organizations.pdf');?>#page=1&zoom=100"></iframe>
             </div>
 
     </div>
+
     <div class="space-bottom"></div>
     <!--END HOME SECTION -->
     <?php  $this->load->view('Globals/LandingPage/footer');?>

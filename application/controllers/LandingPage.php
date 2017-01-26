@@ -24,7 +24,8 @@ class LandingPage extends CI_Controller {
         //@session_start();
         $this->load->model('Landingpage_model');       
     }
-
+/* start  navigations */
+/* start  Main pages */
 	public function index()
 	{	
 		redirect(base_url().("Home.php"));
@@ -54,6 +55,8 @@ class LandingPage extends CI_Controller {
 		$this->load->view('LandingPage/login');
 	
 	}
+	/* end  main pages */
+	/* start  organizations */
 	public function bcssc(){
 		$this->load->view('LandingPage/bcssc');
 	
@@ -64,9 +67,13 @@ class LandingPage extends CI_Controller {
 	}
 	public function lamp(){
 		$this->load->view('LandingPage/lamp');
-
 	
 	}
+	/* end  organizations */
+	/* end  navigations */
+
+
+	/* start  services links */
 	public function softeng(){
 		$this->load->view('LandingPage/softeng');
 	
@@ -75,5 +82,24 @@ class LandingPage extends CI_Controller {
 		$this->load->view('LandingPage/scholarship.php');
 	
 	}
+	public function handbook(){
+		$this->load->view('LandingPage/handbook.php');
+	
+	}
+
+	public function student_activities(){
+		$this->load->view('LandingPage/student_activities.php');
+	
+	}
+
+	public function organizational_chart(){
+		$this->load->view('LandingPage/organizational_chart.php');
+	
+	}
+
+
+
+	/* end  services links */
+
 }
 
