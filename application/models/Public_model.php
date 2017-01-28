@@ -16,5 +16,31 @@ class Public_model extends CI_Model{
 
         return $output;
 	}
+
+    public function get_gallery_albums(){
+        $result = $this->db->query("CALL get_GalleryAlbums();");
+        mysqli_next_result($this->db->conn_id);
+        $output = array();
+        if ($result->num_rows() > 0){
+            $output = $result->result_array();
+        }else{
+            $output = array();
+        }
+
+        return $output;
+    }
+
+    public function get_album($id){
+        $result = $this->db->query("CALL get_PublishedPhoto('$id');");
+        mysqli_next_result($this->db->conn_id);
+        $output = array();
+        if ($result->num_rows() > 0){
+            $output = $result->result_array();
+        }else{
+            $output = array();
+        }
+
+        return $output;
+    }
 }
 ?>

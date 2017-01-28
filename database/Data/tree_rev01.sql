@@ -1,0 +1,1 @@
+INSERT INTO tree VALUES(1, 'Galleries', 'SystemCreate', NOW());

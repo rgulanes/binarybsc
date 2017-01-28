@@ -9,7 +9,7 @@ var newsfeeds = (function () {
 				}
 			},
 			"columns": [
-			    { "data": "n_title" },
+			    { "data": "n_title", "width" : '30%' },
 			    { "data": "section" },
 			    { "data": "date_create" },
 			    { "data": "status_desc" },
@@ -36,7 +36,17 @@ var newsfeeds = (function () {
 												}else{
 													form.find('input[name="news_stat"]').removeAttr('checked');
 												}
-												
+
+												if(v.n_image_url != null){
+													$("#is_img").attr('checked', 'checked');
+													$("#is_imageNeeded").removeClass('hide');
+												    $("#is_imageNeeded").find('input[name="n_img_upload"]').removeAttr('disabled');
+												}else{
+													$("#is_img").removeAttr('checked');
+													$("#is_imageNeeded").addClass('hide');
+												    $("#is_imageNeeded").find('input[name="n_img_upload"]').attr('disabled', 'true');
+												}
+																								
 												form.find('select[name="feedSection"]').val(v.n_section);
 												form.find('select[name="feedPosition"]').val(v.n_position);
 									        });
@@ -84,23 +94,28 @@ var newsfeeds = (function () {
 	};
 
 	var submitForm = function(link){
-		var formData = $("#addNewFeedForm").serialize();
-		$.ajax({
+		var formData = new FormData($("#addNewFeedForm")[0]);
+	    $.ajax({
 	        url: link,
 	        type: 'POST',
 	        data: formData,
-	        dataType: "json",
+	        cache: false,
+	        contentType: false,
+	        processData: false,
 	        error : function(xhr, ajaxOptions, thrownError) {
 	            $.growl.error({ message: xhr.status + '<br>' + thrownError, size: 'medium', location: 'br'});
 	        },
 	        success: function(json) {
-	        	if(json[0].growl == 'success'){
-	        		$.growl.notice({ message: json[0].msg, size: 'medium', location: 'br'});
+	        	var data = JSON.parse(json);
+	        	if(data[0].growl == 'success'){
+	        		$.growl.notice({ message: data[0].msg, size: 'medium', location: 'br'});
 	        	}else{
-	        		$.growl.error({ message: json[0].msg, size: 'medium', location: 'br'});
+	        		$.growl.error({ message: data[0].msg, size: 'medium', location: 'br'});
 	        	}
+
 	            $('#addNewFeedModal').modal('hide');
 	            $('#feedDatatable').DataTable().ajax.reload();
+	            document.getElementById("addNewFeedForm").reset();
 	        }
 	    });
 	};
@@ -127,6 +142,17 @@ var newsfeeds = (function () {
 		$('#feedDatatable').DataTable().ajax.reload();
 	});
 
+	$('#is_img').on('change', function(){
+		if($("#is_img").is(':checked')){
+		    $("#is_imageNeeded").removeClass('hide');
+		    $("#is_imageNeeded").find('input[name="n_img_upload"]').removeAttr('disabled');
+		}
+		else{
+		    $("#is_imageNeeded").addClass('hide');
+		    $("#is_imageNeeded").find('input[name="n_img_upload"]').attr('disabled', 'true');
+		}
+	});
+
 	var showUpdateBtn = function(){
 		$('#confirmCreation').addClass('hide');
 		$('#confirmUpdate').removeClass('hide');
@@ -142,6 +168,8 @@ var newsfeeds = (function () {
 		$("#addNewFeedForm")[0].reset();
 		$('#newsfeed-content').summernote('reset');
 		$("#addNewFeedForm").find('input[name="feed_id"]').val('');
+	    $("#is_imageNeeded").addClass('hide');
+	    $("#is_imageNeeded").find('input[name="n_img_upload"]').attr('disabled', 'true');
 	};
 
 	$('#addNewFeedModal').on('hide.bs.modal', function(){
@@ -152,7 +180,7 @@ var newsfeeds = (function () {
 	});
 
 	$('#newsfeed-content').summernote({
-		height: 250,
+		height: 200,
 		focus: true,
 		shortcuts: false,
 		dialogsInBody: true

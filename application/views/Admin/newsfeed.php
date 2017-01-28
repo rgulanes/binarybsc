@@ -93,7 +93,12 @@
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-6">
+                                    <label class="checkbox-inline  pull-left">
+                                        <input type="checkbox" id="is_img"> <i class="fa fa-image fa-fw"></i>Is Image Needed?
+                                    </label>
+                                </div>
+                                <div class="col-lg-6">
                                     <label class="checkbox-inline  pull-right">
                                         <input type="checkbox" name="news_stat"> <i class="fa fa-globe fa-fw"></i>Publish to Newsfeed
                                     </label>
@@ -114,6 +119,12 @@
                                         <select class="form-control" name="feedPosition"></select>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="form-group hide" id="is_imageNeeded">
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-image fa-fw"></i></span>
+                                <input type="file" name="n_img_upload" class="form-control" disabled="true" /> 
                             </div>
                         </div>
                         <div class="form-group">

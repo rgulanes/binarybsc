@@ -13,7 +13,12 @@ var getFeeds = (function(){
 						case 3 : columns = 'col-md-4 col-sm-4'; break;
 					}
 
-					$('#top_newsfeed').append('<div class="'+columns+'"><h3>'+v.n_title+'</h3><div style="font-size: 12px;">'+v.n_content+'</div style="font-size: 10px; line-height: 2px;"><br><small class="pull-right">By '+v.created_by+' on '+v.date_create+'</small></div>');
+					if(v.n_image_url != '' || v.n_image_url != null){
+						$('#top_newsfeed').append('<div class="'+columns+'"><img src="'+v.n_image_url+'" class="img-responsive" style="display: inline-block; min-width: 300px; height: 210px;" height="210px"><h3>'+v.n_title+'</h3><div style="font-size: 12px;">'+v.n_content+'</div style="font-size: 10px; line-height: 2px;"><br><small class="pull-right">By '+v.created_by+' on '+v.date_create+'</small></div>');
+					}else{
+						$('#top_newsfeed').append('<div class="'+columns+'"><h3>'+v.n_title+'</h3><div style="font-size: 12px;">'+v.n_content+'</div style="font-size: 10px; line-height: 2px;"><br><small class="pull-right">By '+v.created_by+' on '+v.date_create+'</small></div>');
+					}
+
 				});
 			}
 		});
@@ -33,7 +38,11 @@ var getFeeds = (function(){
 						case 3 : columns = 'col-md-4 col-sm-4'; break;
 					}
 
-					$('#middle_newsfeed').append('<div class="'+columns+'"><h3>'+v.n_title+'</h3><div style="font-size: 12px;">'+v.n_content+'</div style="font-size: 10px; line-height: 2px;"><br><small class="pull-right">By '+v.created_by+' on '+v.date_create+'</small></div>');
+					if(v.n_image_url != '' || v.n_image_url != null){
+						$('#middle_newsfeed').append('<div class="'+columns+'"><img src="'+v.n_image_url+'" class="img-responsive" style="display: inline-block; min-width: 300px; height: 210px;" height="210px"><h3>'+v.n_title+'</h3><div style="font-size: 12px;">'+v.n_content+'</div style="font-size: 10px; line-height: 2px;"><br><small class="pull-right">By '+v.created_by+' on '+v.date_create+'</small></div>');
+					}else{
+						$('#middle_newsfeed').append('<div class="'+columns+'"><h3>'+v.n_title+'</h3><div style="font-size: 12px;">'+v.n_content+'</div style="font-size: 10px; line-height: 2px;"><br><small class="pull-right">By '+v.created_by+' on '+v.date_create+'</small></div>');
+					}
 				});
 			}
 		});
@@ -53,7 +62,11 @@ var getFeeds = (function(){
 						case 3 : columns = 'col-md-4 col-sm-4'; break;
 					}
 
-					$('#bottom_newsfeed').append('<div class="'+columns+'"><h3>'+v.n_title+'</h3><div style="font-size: 12px;">'+v.n_content+'</div style="font-size: 10px; line-height: 2px;"><br><small class="pull-right">By '+v.created_by+' on '+v.date_create+'</small></div>');
+					if(v.n_image_url != '' || v.n_image_url != null){
+						$('#bottom_newsfeed').append('<div class="'+columns+'"><img src="'+v.n_image_url+'" class="img-responsive" style="display: inline-block; min-width: 300px; height: 210px;" height="210px"><h3>'+v.n_title+'</h3><div style="font-size: 12px;">'+v.n_content+'</div style="font-size: 10px; line-height: 2px;"><br><small class="pull-right">By '+v.created_by+' on '+v.date_create+'</small></div>');
+					}else{
+						$('#bottom_newsfeed').append('<div class="'+columns+'"><h3>'+v.n_title+'</h3><div style="font-size: 12px;">'+v.n_content+'</div style="font-size: 10px; line-height: 2px;"><br><small class="pull-right">By '+v.created_by+' on '+v.date_create+'</small></div>');
+					}
 				});
 			}
 		});

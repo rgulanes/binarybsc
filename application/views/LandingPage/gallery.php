@@ -7,6 +7,48 @@
 <!--<![endif]-->
 <!-- HEAD SECTION -->
 <?php  $this->load->view('Globals/LandingPage/header');?>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url().('assets/landingpage/plugins/lightbox/css/lightbox.min.css');?>">
+<style type="text/css">
+    .mouse-over{
+        cursor: pointer;
+    }
+
+    .panel-content{
+        line-height: 15px;
+        margin: 0px;
+    }
+
+    .panel-body{
+        padding: 0px;
+    }
+
+    .panel-body img{
+        width: 100%;
+        height: 15%;
+        padding: 3px;
+    }
+
+    #viewAlbum{
+        outline: none;
+        overflow: hidden;
+    }
+
+    .img-preview{
+        width: 15rem;
+        border-radius: 4px;
+    }
+
+    #album-contents a:hover{
+        text-decoration: none;
+    }
+
+    .img-title{
+        line-height: 15px;
+        margin: 5px;
+        text-align: center;
+        color: #6b6a6a;
+    }
+</style>
 <!--END HEAD SECTION -->
 <body>
     <!-- NAV SECTION -->
@@ -29,6 +71,32 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row main-low-margin text-center">
+            <div class="row" id="active_galleries">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="viewAlbum" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top: 10%;">
+        <div class="modal-dialog" style="width: 65%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close mouse-over" data-dismiss="modal" aria-hidden="true" style="font-size: 15px;"><i class="fa fa-times-circle fa-fw"></i> Close</a>
+                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-picture-o fa-fw"></i> <span id="album-title">Sample Album</span></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row" id="album-contents"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
     
     <div class="space-bottom"></div>
     <!--END GALLARY SECTION -->
@@ -36,15 +104,11 @@
      <?php  $this->load->view('Globals/LandingPage/footer');?>
 
     <?php  $this->load->view('Globals/LandingPage/scripts');?>
-    <!-- GRIDGALLERY SCRIPT SCRIPT-->
-    <script src="assets/GridGallery/js/modernizr.custom.js"></script>
-    <script src="assets/GridGallery/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/GridGallery/js/masonry.pkgd.min.js"></script>
-    <script src="assets/GridGallery/js/classie.js"></script>
-    <script src="assets/GridGallery/js/cbpGridGallery.js"></script>
-    <!-- CUSTOM SCRIPT-->
-    <script>
-        new CBPGridGallery(document.getElementById('grid-gallery'));
-    </script>
+    
+    <!-- Lightbox JS -->
+    <script src="<?php echo base_url().('assets/landingpage/plugins/lightbox/js/lightbox.min.js').'?v='.date('mdohis');?>"></script>
+
+    <!-- Page Specific Scripts -->
+    <script src="<?php echo base_url().('assets/landingpage/get_galleryAlbums.js').'?v='.date('mdohis');?>"></script>
 </body>
 </html>

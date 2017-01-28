@@ -19,3 +19,9 @@
 #addNewFeedForm .note-group-select-from-files {
   display: none;
 }
+
+table.dataTable > tbody > tr > td{
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}

@@ -30,6 +30,12 @@ class _Public extends CI_Controller {
 	    		case 'get_newsfeeds':
 	    			$this->_get_newsfeeds($_REQUEST);
 	    			break;
+	    		case 'get_gallery_albums':
+	    			$this->_get_gallery_albums();
+	    			break;
+	    		case 'get_album':
+	    			$this->_get_album($_REQUEST['id']);
+	    			break;
 	    		default :
 	    			echo '404 Not Found.';
 	    			break;
@@ -41,6 +47,16 @@ class _Public extends CI_Controller {
 
 	private function _get_newsfeeds($d){
 		$data = $this->Public_model->get_newsfeeds($d);
+		return print json_encode($data);
+    }
+
+    private function _get_gallery_albums(){
+		$data = $this->Public_model->get_gallery_albums();
+		return print json_encode($data);
+    }
+
+    private function _get_album($id){
+		$data = $this->Public_model->get_album($id);
 		return print json_encode($data);
     }
 }
