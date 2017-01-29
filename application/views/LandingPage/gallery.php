@@ -26,6 +26,8 @@
         width: 100%;
         height: 15%;
         padding: 3px;
+        max-width: 370px;
+        max-height: 245px;
     }
 
     #viewAlbum{

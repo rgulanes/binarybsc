@@ -492,11 +492,13 @@ class Admin_model extends CI_Model{
         $response = array();
 
         $path = "";
+        $c_path = "";
         $f_path = "";
 
         if($data['parent_node'] == NULL || $data['parent_node'] == ''){
             $path = "./files/galleries/" . preg_replace('/\s+/', '_', $data['node_desc']);
             $f_path = "./files/galleries/" . preg_replace('/\s+/', '_', $data['node_desc']);
+            $c_path = $f_path;
         }else{
             $this->db->select('node_desc');
             $query = $this->db->get_where('tree_node', array('node_id' => $data['parent_node']));
@@ -504,6 +506,7 @@ class Admin_model extends CI_Model{
 
             $path = "./files/galleries/" . preg_replace('/\s+/', '_', $output['node_desc']) . '/' . preg_replace('/\s+/', '_', $data['node_desc']);
             $f_path = "./files/galleries/" . preg_replace('/\s+/', '_', $output['node_desc']) . '/' . preg_replace('/\s+/', '_', $data['node_desc']);
+            $c_path = '/' . preg_replace('/\s+/', '_', $data['node_desc']);
         }
 
         if(!is_dir($path)) //create the folder if it's not already exists
@@ -512,7 +515,7 @@ class Admin_model extends CI_Model{
           file_put_contents( $f_path.'/index.html' , '<!DOCTYPE html><html><head><title>403 Forbidden</title></head><body><p>Directory access is forbidden.</p></body></html>' );
         }
 
-        $data['directory'] = $path;
+        $data['directory'] = $c_path;
         
         $this->db->trans_start();
         $this->db->insert('tree_node', $data);
@@ -534,6 +537,18 @@ class Admin_model extends CI_Model{
         return $rdata;
     }
 
+    private function _rename_win($oldfile,$newfile) {
+        if (!rename($oldfile,$newfile)) {
+            if (copy ($oldfile,$newfile)) {
+                unlink($oldfile);
+                return TRUE;
+            }
+            return FALSE;
+        }
+        return TRUE;
+    }
+
+
     public function update_album_info($data, $id){
         $response = array();
 
@@ -547,7 +562,7 @@ class Admin_model extends CI_Model{
                 $old_path = $output['directory'];
                 $new_path = str_replace(preg_replace('/\s+/', '_', $output['node_desc']) , preg_replace('/\s+/', '_', $data['node_desc']), $output['directory']);
 
-                rename($old_path, $new_path);
+                $this->_rename_win($old_path, $new_path);
 
                 $data['directory'] = $new_path;
                 
@@ -586,8 +601,7 @@ class Admin_model extends CI_Model{
         $path = "";
         $f_path = "";
 
-        $this->db->select('directory');
-        $query = $this->db->get_where('tree_node', array('node_id' => $data['album_id']));
+        $query = $this->db->query('SELECT CONCAT(tr.directory, t.directory) AS directory FROM tree_node t JOIN tree_node tr ON tr.node_id = t.parent_node WHERE t.node_id = '.$data['album_id'].' LIMIT 1;');
         $output = $query->row_array();
 
         $path = $output['directory'];
@@ -619,7 +633,7 @@ class Admin_model extends CI_Model{
             $img_msg = "File successfully uploaded";
         }
 
-        $fpath = $path.'/'. $new_name;
+        $fpath = '/'. $new_name;
 
         $data = array(
             'album_id' => $data['album_id'],
@@ -689,8 +703,7 @@ class Admin_model extends CI_Model{
         $f_path = "";
 
         if(!empty($file)){
-            $this->db->select('directory');
-            $query = $this->db->get_where('tree_node', array('node_id' => $data['album_id']));
+            $query = $this->db->query('SELECT CONCAT(tr.directory, t.directory) AS directory FROM tree_node t JOIN tree_node tr ON tr.node_id = t.parent_node WHERE t.node_id = '.$data['album_id'].' LIMIT 1;');
             $output = $query->row_array();
 
             $path = $output['directory'];
@@ -722,7 +735,7 @@ class Admin_model extends CI_Model{
                 $img_msg = "File successfully uploaded";
             }
 
-            $fpath = $path.'/'. $new_name;
+            $fpath = '/'. $new_name;
         }else{
             $this->db->select('img_url');
             $query = $this->db->get_where('photo_tbl', array('photo_id' => $data['photo_id']));
