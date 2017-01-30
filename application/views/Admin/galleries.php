@@ -3,8 +3,6 @@
 
 <head>
 	<?php $this->load->view('Globals/Admin/header');?>
-    <!-- JSTree CSS -->
-    <link href="<?php echo base_url().('assets/admin/plugins/jstree/dist/themes/default/style.min.css');?>" rel="stylesheet">
 </head>
 <body>
 
@@ -192,11 +190,11 @@
     </div>
     <!-- /.modal -->
 
+    <!-- Footer -->
+    <?php $this->load->view('Globals/Admin/footer');?>
+
     <!-- Scripts -->
     <?php $this->load->view('Globals/Admin/scripts');?>
-
-    <!-- JSTree JS -->
-    <script src="<?php echo base_url().('assets/admin/plugins/jstree/dist/jstree.min.js').'?v='.date('mdohis');?>"></script>
     
     <!-- Page Specific Scripts -->
     <script src="<?php echo base_url().('assets/admin/js/admin/admin_galleries.js').'?v='.date('mdohis');?>"></script>

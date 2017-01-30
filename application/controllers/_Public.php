@@ -36,6 +36,9 @@ class _Public extends CI_Controller {
 	    		case 'get_album':
 	    			$this->_get_album($_REQUEST['id']);
 	    			break;
+	    		case 'send_feedback':
+	    			$this->_send_feedback($_POST);
+	    			break;
 	    		default :
 	    			echo '404 Not Found.';
 	    			break;
@@ -57,6 +60,11 @@ class _Public extends CI_Controller {
 
     private function _get_album($id){
 		$data = $this->Public_model->get_album($id);
+		return print json_encode($data);
+    }
+
+    private function _send_feedback($d){
+		$data = $this->Public_model->send_feedback($d);
 		return print json_encode($data);
     }
 }

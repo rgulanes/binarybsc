@@ -14,6 +14,9 @@
     <script src="<?php echo base_url().('assets/admin/plugins/datatables/media/js/jquery.dataTables.min.js');?>"></script>
     <script src="<?php echo base_url().('assets/admin/plugins/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js');?>"></script>
 
+    <!-- JSTree JS -->
+    <script src="<?php echo base_url().('assets/admin/plugins/jstree/dist/jstree.min.js').'?v='.date('mdohis');?>"></script>
+
     <!-- jQuery Growl JavaScript -->
     <script src="<?php echo base_url().('assets/admin/plugins/jquery-growl/jquery.growl.js');?>"></script>
 
@@ -22,3 +25,4 @@
 
     <!-- User Defined JS -->
     <script src="<?php echo base_url().('assets/admin/js/system_time.js').'?v='.date('mdohis');?>"></script>
+    <script src="<?php echo base_url().('assets/admin/js/admin/admin_feedbacks.js').'?v='.date('mdohis');?>"></script>

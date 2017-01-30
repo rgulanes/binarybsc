@@ -473,10 +473,10 @@ class Admin_model extends CI_Model{
                         'parent' => $v['parent'],
                         'icon' => $v['icon'],
                         'data' => array(
-                            'node_id' => $v['node_id'],
-                            'created_by' => $v['created_by'],
-                            'datetime' => $v['datetime'],
-                            'tree_id' => $v['tree_id']
+                        'node_id' => $v['node_id'],
+                        'created_by' => $v['created_by'],
+                        'datetime' => $v['datetime'],
+                        'tree_id' => $v['tree_id']
                         )
                     );
                 }
@@ -791,6 +791,140 @@ class Admin_model extends CI_Model{
         {
             $response['growl'] = 'success';
             $response['msg'] = 'Successfully updated album details.';
+        }
+
+        $rdata = array( '0' => $response);
+
+        return $rdata;
+    }
+
+    public function get_active_messages(){
+        $result = $this->db->query("SELECT feedback_id, sender, email_address, ip_address, feedback, timestamp, is_read FROM binarybsc.feedbacks_tbl WHERE is_deleted != 1 AND email_status != 2;");
+        $data = array();
+        $counter = 0;
+
+        if ($result->num_rows() > 0){
+            $data = $result->result_array();
+            $counter = sizeof($data);
+        }else{
+            $data = array();
+            $counter = 0;
+        }
+
+        $output = array(
+            "iTotalRecords" => $counter,
+            "aaData" => array()
+        );
+
+        if($counter != 0){
+            $output['aaData'] = $data;
+        }else{
+            $output['aaData'] = [];
+        }
+
+        return $output;
+    }
+
+    public function get_archived_messages(){
+        $result = $this->db->query("SELECT feedback_id, sender, email_address, ip_address, feedback, timestamp, is_read FROM binarybsc.feedbacks_tbl WHERE is_deleted != 1 AND email_status = 2;");
+        $data = array();
+        $counter = 0;
+
+        if ($result->num_rows() > 0){
+            $data = $result->result_array();
+            $counter = sizeof($data);
+        }else{
+            $data = array();
+            $counter = 0;
+        }
+
+        $output = array(
+            "iTotalRecords" => $counter,
+            "aaData" => array()
+        );
+
+        if($counter != 0){
+            $output['aaData'] = $data;
+        }else{
+            $output['aaData'] = [];
+        }
+
+        return $output;
+    }
+
+    public function get_deleted_messages(){
+        $result = $this->db->query("SELECT feedback_id, sender, email_address, ip_address, feedback, timestamp, is_read FROM binarybsc.feedbacks_tbl WHERE is_deleted = 1;");
+        $data = array();
+        $counter = 0;
+
+        if ($result->num_rows() > 0){
+            $data = $result->result_array();
+            $counter = sizeof($data);
+        }else{
+            $data = array();
+            $counter = 0;
+        }
+
+        $output = array(
+            "iTotalRecords" => $counter,
+            "aaData" => array()
+        );
+
+        if($counter != 0){
+            $output['aaData'] = $data;
+        }else{
+            $output['aaData'] = [];
+        }
+
+        return $output;
+    }
+
+    public function update_message_info($data){
+        $response = array();
+        $_data = array();
+
+        switch ($data['msg_action']) {
+            case 'archive_message':
+                $_data = array(
+                    'email_status' => 2
+                );
+                break;
+            case 'delete_message':
+                $_data = array(
+                    'is_deleted' => 1
+                );
+                break;
+            case 'read_message':
+                $_data = array(
+                    'is_read' => 1
+                );
+                break;
+            case 'unarchive_message':
+                $_data = array(
+                    'email_status' => 1
+                );
+                break;
+            case 'restore_message':
+                $_data = array(
+                    'is_deleted' => 0
+                );
+                break;
+        }
+
+        $this->db->trans_start();
+        $this->db->where('feedback_id', $data['msg_id']);
+        $this->db->update('feedbacks_tbl', $_data);
+        $this->db->trans_complete();
+
+        if ($this->db->trans_status() === FALSE)
+        {
+            $response['growl'] = 'error';
+            $response['msg'] = 'Unable to process request.';
+        }
+        else
+        {
+            $response['growl'] = 'success';
+            $response['msg'] = 'Successfully updated message.';
         }
 
         $rdata = array( '0' => $response);

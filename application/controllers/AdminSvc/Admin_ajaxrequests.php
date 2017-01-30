@@ -85,6 +85,18 @@ class Admin_ajaxrequests extends CI_Controller {
                 case 'delete_photo':
                     $this->_delete_photo($_POST);
                     break;
+                case 'get_active_messages':
+                    $this->_get_active_messages();
+                    break;
+                case 'get_archived_messages':
+                    $this->_get_archived_messages();
+                    break;
+                case 'get_deleted_messages':
+                    $this->_get_deleted_messages();
+                    break;
+                case 'update_message_info':
+                    $this->_update_message_info($_POST);
+                    break;
                 default : 
                     echo '404 Not Found';
                     break;
@@ -256,6 +268,26 @@ class Admin_ajaxrequests extends CI_Controller {
         $_data = array( 'is_deleted' => $data['is_deleted'] );
 
         $data = $this->Admin_model->delete_photo($_data, $data['photo_id']);
+        return print json_encode($data);
+    }
+
+    private function _get_active_messages(){
+        $data = $this->Admin_model->get_active_messages();
+        return print json_encode($data);
+    }
+
+    private function _get_archived_messages(){
+        $data = $this->Admin_model->get_archived_messages();
+        return print json_encode($data);
+    }
+
+    private function _get_deleted_messages(){
+        $data = $this->Admin_model->get_deleted_messages();
+        return print json_encode($data);
+    }
+
+    private function _update_message_info($d){
+        $data = $this->Admin_model->update_message_info($d);
         return print json_encode($data);
     }
 }

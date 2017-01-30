@@ -117,6 +117,9 @@
     </div>
     <!-- /#wrapper -->
 
+    <!-- Footer -->
+    <?php $this->load->view('Globals/Admin/footer');?>
+
     <!-- Scripts -->
     <?php $this->load->view('Globals/Admin/scripts');?>
 

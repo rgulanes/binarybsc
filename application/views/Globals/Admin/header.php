@@ -20,6 +20,9 @@
 <!-- DataTables Responsive CSS -->
 <link href="<?php echo base_url().('assets/admin/plugins/datatables-responsive/css/dataTables.responsive.css');?>" rel="stylesheet">
 
+<!-- JSTree CSS -->
+<link href="<?php echo base_url().('assets/admin/plugins/jstree/dist/themes/default/style.min.css');?>" rel="stylesheet">
+
 <!-- jQuery Growl CSS -->
 <link href="<?php echo base_url().('assets/admin/plugins/jquery-growl/jquery.growl.css');?>" rel="stylesheet">
 
