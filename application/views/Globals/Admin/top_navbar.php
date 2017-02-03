@@ -9,7 +9,7 @@
                     if(in_array($_SESSION['user']['app_access'], $app_access)){
                 ?>
                 <li class="dropdown" id="app_messsages">
-                    <a class="mouse-over" data-toggle="modal" data-target="#viewMessages">
+                    <a class="mouse-over" id="clickToViewMsg">
                         <i class="fa fa-envelope-o fa-lg fa-fw"></i>
                     </a>
                 </li>

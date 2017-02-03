@@ -159,7 +159,7 @@ class Admin_ajaxrequests extends CI_Controller {
             'created_by' => $_SESSION['user']['username']
         );
 
-        $data = $this->Admin_model->update_user_info($userInfo, $details['user_id']);
+        $data[0] = $this->Admin_model->update_user_info($userInfo, $details['user_id']);
         return print json_encode($data);
     }
 
