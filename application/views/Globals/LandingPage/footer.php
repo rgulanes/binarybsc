@@ -46,8 +46,10 @@
                 <p>
                     P.O. Box 80537<br>
                      Madapo Hills, Davao City.<br>
-                    Call: +639 bla bla<br>
-                    Email: osabrokenshire@gmail.com<br>
+                    Landline: 227-2105 local 153<br>
+                    mobile: 0905-771-3662<br>
+                    Email: joycejasa@gmail.com<br>
+                    
                 </p>
 
                 2016 www.brokenshire.edu.ph | All Right Reserved
