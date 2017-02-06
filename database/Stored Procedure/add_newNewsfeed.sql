@@ -15,7 +15,7 @@ BEGIN
 	
     IF is_existing = 0 
 		THEN
-			IF is_allowed <= 0
+			IF is_allowed <= 0 AND stat = 1
 				THEN
 					SET msg = 'Allowable items to be posted for selected position and section has exceeded its value.';
 					SET growl = 'error';

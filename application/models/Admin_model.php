@@ -358,7 +358,7 @@ class Admin_model extends CI_Model{
             if ($result->num_rows() > 0){
                 $cdata = $result->result_array();
 
-                if($cdata[0]['is_allowed'] <= 0){
+                if($cdata[0]['is_allowed'] <= 0 && $data['n_status'] == 1){
                     $response['growl'] = 'error';
                     $response['msg'] = 'Allowable items to be posted for selected position and section has exceeded its value.';
                 }else{
