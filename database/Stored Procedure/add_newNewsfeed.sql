@@ -9,7 +9,7 @@ BEGIN
     DECLARE msg TEXT;
     DECLARE growl VARCHAR(10);
     
-    SET is_existing = (SELECT COUNT(id) FROM newsfeeds_tbl WHERE n_title = title);
+    SET is_existing = (SELECT COUNT(id) FROM newsfeeds_tbl WHERE n_title = title AND n_status NOT IN (2));
     
     SET is_allowed = (SELECT is_AllowedFeeds(section,position));
 	

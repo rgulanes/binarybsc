@@ -37,14 +37,22 @@ var newsfeeds = (function () {
 													form.find('input[name="news_stat"]').removeAttr('checked');
 												}
 
-												if(v.n_image_url != null){
-													$("#is_img").attr('checked', 'checked');
+												var img_url = v.n_image_url;
+												if(img_url == null || img_url == "" || img_url == " " ){
+													$("#is_img").prop('checked', false);
+													$("#is_imageNeeded").addClass('hide');
+												    $("#is_imageNeeded").find('input[id="n_img_upload"]').attr('disabled', 'true');
+												    $('#img_preview').html('');
+												}else if(img_url != null || img_url != " " || img_url != ""){
+													$("#is_img").prop('checked', true);
 													$("#is_imageNeeded").removeClass('hide');
 												    $("#is_imageNeeded").find('input[name="n_img_upload"]').removeAttr('disabled');
+												    $('#img_preview').append('<a href=".'+img_url+'" data-lightbox="roadtrip" style="color: #5cb85c; cursor: pointer;"><i class="fa fa-file-image-o fa-2x"></i></a>');
 												}else{
-													$("#is_img").removeAttr('checked');
+													$("#is_img").prop('checked', false);
 													$("#is_imageNeeded").addClass('hide');
-												    $("#is_imageNeeded").find('input[name="n_img_upload"]').attr('disabled', 'true');
+												    $("#is_imageNeeded").find('input[id="n_img_upload"]').attr('disabled', 'true');
+												    $('#img_preview').html('');
 												}
 																								
 												form.find('select[name="feedSection"]').val(v.n_section);
@@ -170,6 +178,7 @@ var newsfeeds = (function () {
 		$("#addNewFeedForm").find('input[name="feed_id"]').val('');
 	    $("#is_imageNeeded").addClass('hide');
 	    $("#is_imageNeeded").find('input[name="n_img_upload"]').attr('disabled', 'true');
+	    $('#img_preview').html('');
 	};
 
 	$('#addNewFeedModal').on('hide.bs.modal', function(){
@@ -180,7 +189,7 @@ var newsfeeds = (function () {
 	});
 
 	$('#newsfeed-content').summernote({
-		height: 200,
+		height: 150,
 		focus: true,
 		shortcuts: false,
 		dialogsInBody: true

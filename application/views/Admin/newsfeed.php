@@ -3,6 +3,8 @@
 
 <head>
 	<?php $this->load->view('Globals/Admin/header');?>
+    <!-- Lightbox -->
+    <link href="<?php echo base_url().('assets/admin/plugins/lightbox/css/lightbox.min.css');?>" rel="stylesheet">
     <!-- Summernote CSS -->
     <link href="<?php echo base_url().('assets/admin/plugins/summernote/summernote.css');?>" rel="stylesheet">
 </head>
@@ -77,7 +79,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="addNewFeedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-        <div class="modal-dialog" style="width: 60%;">
+        <div class="modal-dialog" style="width: 60%; top: -1px;">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -122,9 +124,15 @@
                             </div>
                         </div>
                         <div class="form-group hide" id="is_imageNeeded">
-                            <div class="form-group input-group">
-                                <span class="input-group-addon"><i class="fa fa-image fa-fw"></i></span>
-                                <input type="file" name="n_img_upload" class="form-control" disabled="true" /> 
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="fa fa-image fa-fw"></i></span>
+                                        <input type="file" name="n_img_upload" class="form-control" disabled="true" /> 
+                                    </div>
+                                </div>
+                                <div class="col-lg-2" id="img_preview">
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
@@ -149,6 +157,9 @@
 
     <!-- Scripts -->
     <?php $this->load->view('Globals/Admin/scripts');?>
+
+    <!-- Lightbox -->
+    <script src="<?php echo base_url().('assets/admin/plugins/lightbox/js/lightbox.min.js');?>" ></script>
 
     <!-- Summernote JS -->
     <script src="<?php echo base_url().('assets/admin/plugins/summernote/summernote.js').'?v='.date('mdohis');?>"></script>
