@@ -28,10 +28,19 @@
 
         </div>
     </div>
-
+       
+        </div>
     <div class="container">
         <div class="row main-low-margin text-center">
-            <div class="col-md-5 col-sm-5">
+            <div class="col-md-4 col-sm-4">
+                
+                <div class="circle-body"><i class="fa fa-info-circle fa-5x  icon-set"></i></div>
+                <h3>PERSONNEL DETAILS</h3>
+                <p>
+                    text here
+                </p>
+            </div>
+             <div class="col-md-4 col-sm-4">
                 <div class="circle-body"><i class="fa fa-info-circle fa-5x  icon-set"></i></div>
                 <h3>PERSONNEL DETAILS</h3>
                 <p>
@@ -39,49 +48,32 @@
                 </p>
             </div>
 
-            <div class="col-md-7 col-sm-7">
-                <h3>SEND A QUICK QUERY</h3>
-                <hr>
-                <form>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" required="required" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" required="required" placeholder="Email address">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12">
-                            <div class="form-group">
-                                <textarea name="message" id="Textarea1" required="required" class="form-control" rows="7" placeholder="Message"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Submit Request</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
+             <div class="col-md-4 col-sm-4">
+                <div class="circle-body"><i class="fa fa-info-circle fa-5x  icon-set"></i></div>
+                <h3>PERSONNEL DETAILS</h3>
+                <p>
+                    text here
+                </p>
+            </div>       
         </div>
-        <div class="row main-low-margin ">
-
-
-            <div class="col-md-7 col-sm-7">
-                <h3>Header here </h3>
                 <hr>
-                <p>
-                    text here
-                </p>
-                <p>
-                    text here
-                </p>
-            </div>
-            <div class="col-md-5 col-sm-5 text-center">
+                    <div class="container" align="center">
+            
+                            <h2>Brokenshire College Employees</h2>
+                       <div class="col-lg-12" >
+                                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Brokenshire_College_Employees.pdf');?>#page=1&zoom=100"></iframe>
+                       </div>
+
+                                <hr>
+
+                            <h2>Student Organizations</h2>
+                        <div class="col-lg-12" >
+                              <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Student_Organizations.pdf');?>#page=1&zoom=100"></iframe>
+                      </div>
+                <hr>      
+    </div>
+        <div class="row main-low-margin ">
+            <div class="col-md-12 col-sm-12 text-center">
                 <div class="circle-body"><i class="fa fa-location-arrow fa-5x  icon-set"></i></div>
                 <h3>OUR LOCATION </h3>
                 <p>

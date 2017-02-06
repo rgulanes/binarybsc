@@ -69,7 +69,7 @@ $route['SoftEng'] = 'LandingPage/softeng';
 $route['scholarship'] = 'LandingPage/scholarship';
 $route['handbook'] = 'LandingPage/handbook';
 $route['student_activities'] = 'LandingPage/student_activities';
-$route['organizational_chart'] = 'LandingPage/organizational_chart';
+$route['Student_Affairs'] = 'LandingPage/Student_Affairs';
 
 
 /* Admin Module */

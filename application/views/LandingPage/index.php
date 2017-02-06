@@ -22,37 +22,39 @@
     <div id="slides">
         <img src="<?php echo base_url().('assets/landingpage/img/slider/images/1.jpg');?>" alt="" />
         <img src="<?php echo base_url().('assets/landingpage/img/slider/images/2.jpg');?>" alt="" />
-        <img src="<?php echo base_url().('assets/landingpage/img/slider/images/1.jpg');?>" alt="" />
-        <img src="<?php echo base_url().('assets/landingpage/img/slider/images/2.jpg');?>" alt="" />
+        <img src="<?php echo base_url().('assets/landingpage/img/slider/images/3.jpg');?>" alt="" />
+        <img src="<?php echo base_url().('assets/landingpage/img/slider/images/4.jpg');?>" alt="" />
 
     </div>
     <!-- END SLIDER SECTION -->
 
-    <div class="container">
+    <div class="container"> 
+    <h2 align="center" > OSA Announcements / News </h2>
         <div class="row main-low-margin text-center" id="top_newsfeed">
-                                        <h2> OSA Announcements / News </h2>
+                                       
+
             <div class="col-md-4 col-sm-4">
 
-                      <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
-                <h3>Title 1</h3>
+                 <!--     <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px"> -->
+                <h3>(Empty title)</h3>
                 <p>
-                   edit here. 
+                   (Empty Paragraph) 
                 </p>
             </div>
             
             <div class="col-md-4 col-sm-4">
-                     <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
-                <h3>Title 2</h3>
+                    <!-- <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px"> -->
+                <h3>(Empty title)</h3>
                 <p>
-                    edit here.
+                   (Empty Paragraph)
                 </p>
             </div>
 
             <div class="col-md-4 col-sm-4">
-                     <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
-                <h3>Title 3</h3>
+                   <!--  <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px"> -->
+               <h3>(Empty title)</h3>
                 <p>
-                    edit here.
+                   (Empty Paragraph)
                 </p>
             </div>
 
@@ -62,57 +64,57 @@
         <div class="row main-low-margin ">
                     <div class="col-md-8 col-sm-8" id="middle_newsfeed">                   
                             <div class="col-md-4 col-sm-4" >
-                                <h3>Title 1</h3>
+                                <h3>(Empty title)</h3>
                                 <p>
-                                        edit here.
+                                       (Empty Paragraph)
                                 </p>
                                 <p>
-                                        edit here.
+                                       (Empty Paragraph)
                                 </p>
                             </div>
                             <div class="col-md-4 col-sm-4" >
-                                <h3>Title 2</h3>
+                               <h3>(Empty title)</h3>
                                 <p>
-                                        edit here.
+                                       (Empty Paragraph)
                                 </p>
                                 <p>
-                                        edit here.
+                                       (Empty Paragraph)
                                 </p>
                             </div>
                     </div>
             <div class="col-md-4 col-sm-4 text-center">
-             <img class="img-circle" src="<?php echo base_url().('assets/landingpage/img/img1.jpg');?>" style="width: 200px">
+             <img class="img-circle" src="<?php echo base_url().('assets/landingpage/img/pres.jpg');?>" style="width: 200px">
                 <h3>Brokenshire College | President</h3>
                 <h4>Linell G. Malimbag, RN, PhD</h4>
 
             </div>
         </div>
         <hr>
-                                        
+                                        <h2 align="center"> OSA Information </h2>
         <div class="row main-low-margin text-center" id="bottom_newsfeed">
-                                        <h2> OSA Information </h2>
+                                        
             <div class="col-md-4 col-sm-4">
 
-                      <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
-                <h3>Title 1</h3>
+                     <!-- <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px"> -->
+                <h3>(Empty title)</h3>
                 <p>
-                    edit here.
+                   (Empty Paragraph)
                 </p>
             </div>
             
             <div class="col-md-4 col-sm-4">
-                     <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
-                <h3>Title 2</h3>
+                    <!-- <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px"> -->
+                <h3>(Empty title)</h3>
                 <p>
-                    edit here.
+                   (Empty Paragraph)
                 </p>
             </div>
 
             <div class="col-md-4 col-sm-4">
-                     <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px">
-                <h3>Title 3</h3>
+                   <!--  <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px"> -->
+               <h3>(Empty title)</h3>
                 <p>
-                    edit here.
+                   (Empty Paragraph)
                 </p>
             </div>
 

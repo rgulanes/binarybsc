@@ -33,9 +33,9 @@
         <div class="row main-low-margin text-center">
             <div class="col-md-4 col-sm-4">
                 <div class="circle-body"><i class="fa fa-lightbulb-o fa-5x  icon-set"></i></div>
-                <h3>OGANIZATIONAL CHART</h3>
+                <h3>STUDENT AFFAIRS</h3>
                 
-               <a href="<?php echo base_url().('organizational_chart.php'); ?>" class="btn btn-info" role="button">Learn More</a>
+               <a href="<?php echo base_url().('Student_Affairs.php'); ?>" class="btn btn-info" role="button">Learn More</a>
             </div>
             <div class="col-md-4 col-sm-4">
                 <div class="circle-body"><i class="fa fa-edit fa-5x  icon-set"></i></div>
@@ -82,6 +82,7 @@
             </h3>
 
         </div>
+
 
             <div class="col-lg-12" >
                 <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/THE_LIFE_PURPOSE_VMG_HISTORY.pdf');?>#page=1&zoom=100"></iframe>

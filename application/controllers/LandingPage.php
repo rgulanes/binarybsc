@@ -92,8 +92,8 @@ class LandingPage extends CI_Controller {
 	
 	}
 
-	public function organizational_chart(){
-		$this->load->view('LandingPage/organizational_chart.php');
+	public function Student_Affairs(){
+		$this->load->view('LandingPage/Student_Affairs.php');
 	
 	}
 

@@ -5,7 +5,7 @@
             <div class="col-md-4">
                 <h4>Quick Information :</h4>
                 <p>
-                    text here.
+                    OSA Brokenshire wants you to have feedback so that we could improve our services for all.
                 </p>
                 
             </div>
