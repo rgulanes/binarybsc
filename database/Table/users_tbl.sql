@@ -1,4 +1,4 @@
-CREATE TABLE `binarybsc`.`users_tbl` (
+CREATE TABLE IF NOT EXISTS `users_tbl` (
   `user_id` INT NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(45) NULL,
   `user_lname` VARCHAR(45) NULL,

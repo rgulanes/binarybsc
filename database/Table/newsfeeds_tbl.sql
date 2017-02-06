@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `binarybsc`.`newsfeeds_tbl`;
-CREATE TABLE IF NOT EXISTS `binarybsc`.`newsfeeds_tbl` (
+DROP TABLE IF EXISTS `newsfeeds_tbl`;
+CREATE TABLE IF NOT EXISTS `newsfeeds_tbl` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `n_title` TEXT NULL,
   `n_content` TEXT NULL,

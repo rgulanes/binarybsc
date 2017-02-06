@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS `binarybsc`.`lk_feed_section`;
-CREATE TABLE IF NOT EXISTS `binarybsc`.`lk_feed_section` (
+DROP TABLE IF EXISTS `lk_feed_section`;
+CREATE TABLE IF NOT EXISTS `lk_feed_section` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `description` VARCHAR(100) NULL,
   `status_id` INT NULL,
