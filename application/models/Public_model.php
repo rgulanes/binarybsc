@@ -78,9 +78,20 @@ class Public_model extends CI_Model{
         {
             $response['growl'] = 'success';
             $response['msg'] = 'Successfully added feedback.';
+            
+            $this->_emailSender($_data['sender'],'OSA Feedback Form sent by ' . $_data['sender'], $_data['feedback'], $_data['email_address']);
+
         }
 
         return $response;
+    }
+
+    private function _emailSender($sender, $subject, $content, $emailTo){
+        $headers = 'From: '.$sender.' <'.$emailTo.'>' . "\r\n" .
+                    'Reply-To: info@osabrokenshire.rf.gd' . "\r\n" .
+                    'X-Mailer: PHP/' . phpversion();
+
+        mail('info@osabrokenshire.rf.gd', $subject, $content, $headers);
     }
 }
 ?>

@@ -5,6 +5,12 @@ $(document).ready(function(){
 
 				var _action = 'get_active_messages';
 
+				if ( $.fn.DataTable.isDataTable('#emailReceivedTable') ) {
+				  $('#emailReceivedTable').DataTable().destroy();
+				}
+
+				$('#emailReceivedTable tbody').empty();
+
 				var emailTable = $('#emailReceivedTable').DataTable({
 					"ajax": {
 							"url" : "../AdminSvc/Admin_ajaxrequests/db_request?do=get_active_messages",
