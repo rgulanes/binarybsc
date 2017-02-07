@@ -39,14 +39,14 @@
             
             <h2>Brokenshire College Employees</h2>
             <div class="col-lg-12" >
-                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Brokenshire_College_Employees.pdf');?>#page=1&zoom=100"></iframe>
+                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Brokenshire_College_Employees.pdf');?>#page=1&zoom=100" frameborder="0" allowtransparency="true" ></iframe>
             </div>
 
         <hr>
 
             <h2>Student Organizations</h2>
             <div class="col-lg-12" >
-                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Student_Organizations.pdf');?>#page=1&zoom=100"></iframe>
+                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Student_Organizations.pdf');?>#page=1&zoom=100" frameborder="0" allowtransparency="true" ></iframe>
             </div>
 
     </div>

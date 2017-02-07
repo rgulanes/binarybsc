@@ -39,14 +39,14 @@
             
             <h2>Schedule of Student Activities</h2>
             <div class="col-lg-12" >
-                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Student_Activities.pdf');?>#page=1&zoom=100"></iframe>
+                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Student_Activities.pdf');?>#page=1&zoom=100" frameborder="0" allowtransparency="true" ></iframe>
             </div>
 
         <hr>
 
             <h2>Leadership Programme 2016</h2>
             <div class="col-lg-12" >
-                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Leadership_Training_Programme_2016.pdf');?>#page=1&zoom=100"></iframe>
+                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Leadership_Training_Programme_2016.pdf');?>#page=1&zoom=100" frameborder="0" allowtransparency="true" ></iframe>
             </div>
 
     </div>

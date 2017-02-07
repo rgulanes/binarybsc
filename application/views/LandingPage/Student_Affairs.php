@@ -67,7 +67,7 @@
                         <h2>School Calendar A.Y. 2016 - 2017</h2>
             
                         <div class="col-lg-12" >
-                             <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/School_Calendar_16_17.pdf');?>#page=1&zoom=100"></iframe>
+                             <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/School_Calendar_16_17.pdf');?>#page=1&zoom=100" frameborder="0" allowtransparency="true" ></iframe>
                     </div>
 
     </div>

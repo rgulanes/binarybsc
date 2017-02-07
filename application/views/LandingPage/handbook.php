@@ -40,7 +40,7 @@
 <h2>Handbook PDF</h2>
             
             <div class="col-lg-12" >
-                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/handbook.pdf');?>#page=1&zoom=100"></iframe>
+                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/handbook.pdf');?>#page=1&zoom=100" frameborder="0" allowtransparency="true" ></iframe>
             </div>
 
     </div>
