@@ -58,19 +58,26 @@
         </div>
                 <hr>
                     <div class="container" align="center">
-            
-                            <h2>Brokenshire College Employees</h2>
-                       <div class="col-lg-12" >
-                                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Brokenshire_College_Employees.pdf');?>#page=1&zoom=100"></iframe>
-                       </div>
+                            <div class="col-md-6 col-sm-6 text-center">
+                <div class="circle-body"><i class="fa fa-book fa-5x  icon-set"></i></div>
+                <h3>Brokenshire College Employees</h3>
+                <p>Brokenshire College employees as of 2016</p>
 
-                                <hr>
+                  <a href="<?php echo base_url().('employees.php'); ?>" class="btn btn-info" role="button">PDF file</a>
+            </div>
+                       
 
-                            <h2>Student Organizations</h2>
-                        <div class="col-lg-12" >
-                              <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/Student_Organizations.pdf');?>#page=1&zoom=100"></iframe>
-                      </div>
-                <hr>      
+                                
+          <div class="col-md-6 col-sm-6 text-center">
+                <div class="circle-body"><i class="fa fa-book fa-5x  icon-set"></i></div>
+                <h3>Student Organizations</h3>
+                <p>The Office of Student Affairs undertakes the supervision and coordination of student organizations </p>
+
+                  <a href="<?php echo base_url().('student_orgs.php'); ?>" class="btn btn-info" role="button">PDF file</a>
+            </div>
+                            
+                        
+                     
     </div>
         <div class="row main-low-margin ">
             <div class="col-md-12 col-sm-12 text-center">
@@ -78,10 +85,11 @@
                 <h3>OUR LOCATION </h3>
                 <p>
                      <p>
-                        P.O. Box 80537<br>
-                         Madapo Hills, Davao City.<br>
-                         Call: +639 bla bla<br>
-                         Email: osabrokenshire@gmail.com<br>
+                         P.O. Box 80537<br>
+                     Madapo Hills, Davao City.<br>
+                    Landline: 227-2105 local 153<br>
+                    mobile: 0905-771-3662<br>
+                    Email: joycejasa@gmail.com<br>
                     </p>
 
                 </p>

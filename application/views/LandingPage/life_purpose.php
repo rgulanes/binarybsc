@@ -23,8 +23,8 @@
 
             <div class="row main-low-margin">
                 <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-                    <h1 align="center" >
-                    Brokenshire College | Student Affairs
+                    <h1 align="center" >LIFE PURPOSE 
+Brokenshire College fulfills the Evangelical Christian Teaching Ministry of the Church.
                     </h1>
                     
                 </div>
@@ -35,50 +35,13 @@
     </div>
    
 
-        <div class="container">
-            <div class="row main-low-margin text-center">
-                 
-
-                <div class="col-md-4 col-sm-4">
-                    <div class="circle-body"><i class="fa fa-info-circle fa-5x  icon-set"></i></div>
-                        <h3>Identification</h3>
-                             <p>
-                                   renewal of I.D.'s, Lost I.D. , Validation and etc.
-                             </p>
-                </div>
-                
-                <div class="col-md-4 col-sm-4">                
-                    <div class="circle-body"><i class="fa fa-info-circle fa-5x  icon-set"></i></div>
-                        <h3>Sports Corner</h3>
-                            <p>
-                                  Varsities, Scholarships and etc.
-                            </p>
-                </div>
-                
-                <div class="col-md-4 col-sm-4">            
-                     <div class="circle-body"><i class="fa fa-info-circle fa-5x  icon-set"></i></div>
-                            <h3>Violations</h3>
-                                <p>
-                                     Do's and dont's inside Brokenshire College.
-                                </p>
-                </div>
-        
-                <hr>
-
-                    <h3 align="center" >
-                     <h2>School Calendar A.Y. 2016 - 2017</h2>
-                            <br>
-                    <a href="<?php echo base_url().('school_calendar.php'); ?>" class="btn btn-info" role="button">PDF File</a>
-                     </h3>
-                    
-
-
+    <div class="container" align="center">
+          
+         <div class="col-lg-12" >
+                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/THE_LIFE_PURPOSE_VMG_HISTORY.pdf');?>#page=1&zoom=100" frameborder="0" allowtransparency="true" ></iframe>
             </div>
-        </div>
 
-
-
-
+    </div>
     <div class="space-bottom"></div>
     <!--END HOME SECTION -->
     <?php  $this->load->view('Globals/LandingPage/footer');?>

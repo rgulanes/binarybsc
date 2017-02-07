@@ -70,6 +70,10 @@ $route['scholarship'] = 'LandingPage/scholarship';
 $route['handbook'] = 'LandingPage/handbook';
 $route['student_activities'] = 'LandingPage/student_activities';
 $route['Student_Affairs'] = 'LandingPage/Student_Affairs';
+$route['life_purpose'] = 'LandingPage/life_purpose';
+$route['school_calendar'] = 'LandingPage/school_calendar';
+$route['employees'] = 'LandingPage/employees';
+$route['student_orgs'] = 'LandingPage/student_orgs';
 
 
 /* Admin Module */

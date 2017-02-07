@@ -5,7 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
 <!--<![endif]-->
-<!-- HEAD SECTION -->
+<!-- HEAD SECTION --> 
     <?php  $this->load->view('Globals/LandingPage/header');?>
 <!--END HEAD SECTION -->
 <body>
@@ -35,19 +35,19 @@
                 <div class="circle-body"><i class="fa fa-lightbulb-o fa-5x  icon-set"></i></div>
                 <h3>STUDENT AFFAIRS</h3>
                 
-               <a href="<?php echo base_url().('Student_Affairs.php'); ?>" class="btn btn-info" role="button">Learn More</a>
+               <a href="<?php echo base_url().('Student_Affairs.php'); ?>" class="btn btn-info" role="button">PDF File</a>
             </div>
             <div class="col-md-4 col-sm-4">
                 <div class="circle-body"><i class="fa fa-edit fa-5x  icon-set"></i></div>
                 <h3>SCHOLARSHIPS</h3>
               
-                <a href="<?php echo base_url().('scholarship.php'); ?>" class="btn btn-info" role="button">Learn More</a>
+                <a href="<?php echo base_url().('scholarship.php'); ?>" class="btn btn-info" role="button">PDF File</a>
             </div>
             <div class="col-md-4 col-sm-4">
                 <div class="circle-body"><i class="fa fa-picture-o fa-5x  icon-set"></i></div>
                 <h3>STUDENT ACTIVITIES</h3>
                
-                <a href="<?php echo base_url().('student_activities.php'); ?>" class="btn btn-info" role="button">Learn More</a>
+                <a href="<?php echo base_url().('student_activities.php'); ?>" class="btn btn-info" role="button">PDF File</a>
             </div>
 
         </div>
@@ -69,6 +69,7 @@
                 <div class="circle-body"><i class="fa fa-book fa-5x  icon-set"></i></div>
                 <h3>HANDBOOK</h3>
                 
+
                   <a href="<?php echo base_url().('handbook.php'); ?>" class="btn btn-info" role="button">PDF file</a>
             </div>
         </div>
@@ -79,14 +80,31 @@
                      THE LIFE PURPOSE, VISION AND MISSION, <br>
                          QUALITY POLICY AND CORE VALUES OF <br>
                             BROKENSHIRE COLLEGE
+                            <br>
+                    <a href="<?php echo base_url().('life_purpose.php'); ?>" class="btn btn-info" role="button">PDF File</a>
             </h3>
 
+            <h4>
+                 <h3> LIFE PURPOSE </h3>
+
+        <p> Brokenshire College fulfills the Evangelical Christian Teaching Ministry of the Church.</p>
+
+                  <h3>  VISION STATEMENT </h3>
+       <p> Brokenshire College is the leading learning and transforming Evangelical Christian institution enabling learners to make a difference in the world. </p>
+
+                  <h3>  MISSION STATEMENT </h3>
+        <p> Brokenshire College is a learning organization engaged in the pursuit and diffusion of knowledge through the highest standards of instruction, research and extension. It leads a life of faith, learning and action that develop people to become intellectually competent, sensitive, spiritually mature, aware and responsive to the needs and aspirations of the community. It manages and develops wisely all resources to ensure sustainable growth of the institution as responsible stewards of God and contributes to the realization of a just, free and responsible Christian social order. </p>
+
+                  <h3>  QUALITY POLICY </h3>
+       <p> Brokenshire College is committed to provide value-oriented quality Christian education through continuous improvement and total involvement for customer satisfaction. </p>
+</h4> 
         </div>
 
 
-            <div class="col-lg-12" >
-                <iframe class="form-control" style="height: 500px" id="iframepdf" src="<?php echo base_url().('assets/landingpage/pdf_files/THE_LIFE_PURPOSE_VMG_HISTORY.pdf');?>#page=1&zoom=100" frameborder="0" allowtransparency="true" ></iframe>
-            </div>
+               
+                
+
+            
 
 </div>
     <div class="space-bottom"></div>

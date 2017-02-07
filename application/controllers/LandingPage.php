@@ -97,6 +97,23 @@ class LandingPage extends CI_Controller {
 	
 	}
 
+	public function life_purpose(){
+		$this->load->view('LandingPage/life_purpose.php');
+	
+	}
+	public function school_calendar(){
+		$this->load->view('LandingPage/school_calendar.php');
+	
+	}
+	public function employees(){
+		$this->load->view('LandingPage/employees.php');
+	
+	}
+	public function student_orgs(){
+		$this->load->view('LandingPage/student_orgs.php');
+	
+	}
+
 
 
 	/* end  services links */
