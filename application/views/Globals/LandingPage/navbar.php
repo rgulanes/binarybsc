@@ -18,7 +18,7 @@
                     <li><a href="<?php echo base_url().('Services.php'); ?>">SERVICES</a></li>
                     <li><a href="<?php echo base_url().('Gallery.php'); ?>">GALLERY</a></li>
                     <li><a href="<?php echo base_url().('Contact.php'); ?>">CONTACT US</a></li>
-                    <li class="dropdown">
+                 <!--   <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         ORGANIZATIONS <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -27,7 +27,7 @@
                             <li><a href="<?php echo base_url().('lamp.php'); ?>">LAMP</a></li>
                             <li><a href="<?php echo base_url().('SoftEng.php'); ?>">S.E. Gr. 2</a></li>
                         </ul>
-                    </li>
+                    </li> -->
 
                     <li><a href="<?php echo base_url().('Admin/Login.php'); ?>"><span class="glyphicon glyphicon-log-in"></span>&nbsp;LOGIN</a></li>
                 </ul>

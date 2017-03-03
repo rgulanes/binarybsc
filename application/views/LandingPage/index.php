@@ -36,27 +36,27 @@
             <div class="col-md-4 col-sm-4">
 
                  <!--     <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px"> -->
-                <h3>(Empty title)</h3>
+                <h3></h3>
                 <p>
-                   (Empty Paragraph) 
+                   
                 </p>
             </div>
             
             <div class="col-md-4 col-sm-4">
                     <!-- <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px"> -->
-                <h3>(Empty title)</h3>
+                <h3></h3>
                 <p>
-                   (Empty Paragraph)
+                   
                 </p>
             </div>
 
             <div class="col-md-4 col-sm-4">
                    <!--  <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px"> -->
-               <h3>(Empty title)</h3>
+               <h3></h3>
                 <p>
-                   (Empty Paragraph)
+                   
                 </p>
-            </div>
+            </div> 
 
         </div>
         <hr>
@@ -64,28 +64,28 @@
         <div class="row main-low-margin ">
                     <div class="col-md-8 col-sm-8" id="middle_newsfeed">                   
                             <div class="col-md-4 col-sm-4" >
-                                <h3>(Empty title)</h3>
+                               <h3></h3>
                                 <p>
-                                       (Empty Paragraph)
+                                       
                                 </p>
                                 <p>
-                                       (Empty Paragraph)
+                                       
                                 </p>
                             </div>
                             <div class="col-md-4 col-sm-4" >
-                               <h3>(Empty title)</h3>
+                               <h3></h3>
                                 <p>
-                                       (Empty Paragraph)
+                                       
                                 </p>
                                 <p>
-                                       (Empty Paragraph)
+                                       
                                 </p>
-                            </div>
+                            </div> 
                     </div>
             <div class="col-md-4 col-sm-4 text-center">
              <img class="img-circle" src="<?php echo base_url().('assets/landingpage/img/pres.jpg');?>" style="width: 200px">
-                <h3>Brokenshire College | President</h3>
-                <h4>Linell G. Malimbag, RN, PhD</h4>
+                <h3>Brokenshire College | Acting President</h3>
+                <h4>Dr. Felix C. Chavez, PhD</h4>
 
             </div>
         </div>
@@ -96,25 +96,25 @@
             <div class="col-md-4 col-sm-4">
 
                      <!-- <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px"> -->
-                <h3>(Empty title)</h3>
+                <h3></h3>
                 <p>
-                   (Empty Paragraph)
+                   
                 </p>
             </div>
             
             <div class="col-md-4 col-sm-4">
                     <!-- <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px"> -->
-                <h3>(Empty title)</h3>
+                <h3></h3>
                 <p>
-                   (Empty Paragraph)
+                   
                 </p>
             </div>
 
             <div class="col-md-4 col-sm-4">
                    <!--  <img src="assets/landingpage/img/img1.jpg" width="300px" height="210px"> -->
-               <h3>(Empty title)</h3>
+               <h3></h3>
                 <p>
-                   (Empty Paragraph)
+                   
                 </p>
             </div>
 

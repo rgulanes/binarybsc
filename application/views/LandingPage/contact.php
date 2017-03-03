@@ -31,32 +31,7 @@
        
         </div>
     <div class="container">
-        <div class="row main-low-margin text-center">
-            <div class="col-md-4 col-sm-4">
-                
-                <div class="circle-body"><i class="fa fa-info-circle fa-5x  icon-set"></i></div>
-                <h3>PERSONNEL DETAILS</h3>
-                <p>
-                    text here
-                </p>
-            </div>
-             <div class="col-md-4 col-sm-4">
-                <div class="circle-body"><i class="fa fa-info-circle fa-5x  icon-set"></i></div>
-                <h3>PERSONNEL DETAILS</h3>
-                <p>
-                    text here
-                </p>
-            </div>
-
-             <div class="col-md-4 col-sm-4">
-                <div class="circle-body"><i class="fa fa-info-circle fa-5x  icon-set"></i></div>
-                <h3>PERSONNEL DETAILS</h3>
-                <p>
-                    text here
-                </p>
-            </div>       
-        </div>
-                <hr>
+                    <hr>
                     <div class="container" align="center">
                             <div class="col-md-6 col-sm-6 text-center">
                 <div class="circle-body"><i class="fa fa-book fa-5x  icon-set"></i></div>
